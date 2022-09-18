@@ -1,0 +1,121 @@
+/* No selections */
+* {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+#blueArmies {
+    padding: 10px;
+    margin: 10px;
+    background-color: #BBDEFB;
+    border: 3px solid #1E88E5;
+    border-radius: 10px;
+}
+
+#redArmies {
+    padding: 10px;
+    margin: 10px;
+    background-color: #FFCDD2;
+    border: 3px solid #E53935;
+    border-radius: 10px;
+}
+
+#blueArmyList {
+    background-color: #BBDEFB;
+}
+
+#redArmyList {
+    background-color: #FFCDD2;
+}
+
+.army {
+    padding: 10px;
+    margin: 10px;
+    background-color: inherit;
+    filter: brightness(90%);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.createArmyButton {
+    padding: 10px;
+    margin: 10px;
+    background-color: inherit;
+    border: 3px solid;
+    border-color: inherit;
+    border-radius: 10px;
+    filter: brightness(110%);
+    font-weight: bold;
+}
+
+.createArmyButton:hover {
+    filter: brightness(125%);
+    transition: 0.15s;
+}
+
+.deleteButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 45px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+#fightButton {
+    padding: 10px;
+    margin: 10px;
+    background-color: lightgray;
+    border: 3px solid;
+    border-color: black;
+    border-radius: 10px;
+    filter: brightness(100%);
+    font-weight: bold;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#fightButton:hover {
+    filter: brightness(80%);
+    transition: 0.15s;
+}
+
+#results {
+    text-align: center;
+    font-weight: bold;
+}
+
+.redText {
+    color: red;
+}
+
+.blueText {
+    color: blue;
+}
+
+.grayText {
+    color: gray;
+}
